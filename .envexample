@@ -1,0 +1,4 @@
+PORT = 8080
+DB_CONNECTION='mongodb+srv://jesuspradillajp:G3gTjsrdlEAtPwnh@cluster0.av0whs1.mongodb.net/imueble_db'
+
+JWT_SECRET_KEY = 'jesuspradillamoreno'

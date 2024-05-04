@@ -1,0 +1,305 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "api inmuebles Fernando",
+    "collectionId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+    "dateExported": "2024-05-04T19:07:24.563Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "9f1ef012-8754-4edd-ab0b-e7c6cddc8c27",
+            "name": "oficinas",
+            "containerId": "",
+            "created": "2024-05-04T18:20:56.528Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "423efae5-078f-4185-be5e-e9a9c2a653c9",
+            "name": "inmuebles",
+            "containerId": "",
+            "created": "2024-05-04T18:20:56.529Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "31a9ce95-8ba8-4f6a-a9e4-ab2db74bcd94",
+            "name": "clientes",
+            "containerId": "",
+            "created": "2024-05-04T18:20:56.530Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "f7a878c1-e0e3-4dec-b7a9-ee290439c40f",
+            "name": "auth",
+            "containerId": "",
+            "created": "2024-05-04T18:20:56.531Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "baaa0fb5-9301-436f-885e-46df20b7ac6f",
+            "name": "usuarios",
+            "containerId": "",
+            "created": "2024-05-04T18:20:56.532Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "db96bb77-cd0f-4e36-a136-706a63958cfc",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "423efae5-078f-4185-be5e-e9a9c2a653c9",
+            "name": "Create Inmueble",
+            "url": "http://localhost:8080/api/inmuebles/create",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-05-04T18:20:56.528Z",
+            "modified": "2024-05-04T19:07:05.431Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjM2ODcwY2NlMjhhM2M0YjZmMDY4NDUiLCJpYXQiOjE3MTQ4NDk1NzQsImV4cCI6MTcxNDg1MzE3NH0.XFCY22EFPX-LiOrcuINxLR6A6Qmf7to61dPdxroBhHA"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"numero_referencia\": \"REF4545\",\n    \"tipo\": \"Casa\",\n    \"superficie\": 80,\n    \"nuevo\": true,\n    \"direccion\": \"Avenida El Cristal 789\",\n    \"precio\": 100000,\n    \"estado\": \"EN VENTA\",\n    \"propietario\": {\n        \"nombre\": \"Marlon Ramirez Muños\",\n        \"correo\": \"Marlon@gmail.com\",\n        \"celular_contacto\": \"987654321\",\n        \"telefono_contacto\": \"123456789\"\n    },\n    \"caracteristicas\": {\n        \"numero_habitaciones\": 3,\n        \"numero_baños\": 2,\n        \"piscina\": false,\n        \"acondicionado\": true,\n        \"parqueadero\": true,\n        \"servicios\": {\n            \"gas\": true,\n            \"electrico\": true,\n            \"acueducto\": true\n        },\n        \"otro\": null\n    },\n    \"oficina\":\"662743992718615faf001bd4\",\n    \"visitas\": [\n        {\n            \"cliente\": \"66274ba6323931b202e3962d\",\n            \"fecha\": \"2024-04-10\",\n            \"estado\": \"POR VISITAR\"\n        }\n    ]\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "7b1eed7e-88ab-43ad-b283-03b3103df7b8",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "423efae5-078f-4185-be5e-e9a9c2a653c9",
+            "name": "Get Referencia",
+            "url": "https://api-parcial-uejn.onrender.com/api/inmuebles/REF4545",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-04T18:20:56.529Z",
+            "modified": "2024-05-04T18:39:52.404Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjM2NjZlMzJmMGFmNmUyYmZlY2E3MzUiLCJpYXQiOjE3MTQ4NDYwODQsImV4cCI6MTcxNDg0OTY4NH0.fpisVubShmo4iUiCqwlVo6BIK9veFtXewPBGl4KF2fA"
+                }
+            ]
+        },
+        {
+            "_id": "dfc548c6-786d-4988-957d-cd94930670b0",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "423efae5-078f-4185-be5e-e9a9c2a653c9",
+            "name": "Inmuebles Activos",
+            "url": "https://api-parcial-uejn.onrender.com/api/inmuebles/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-05-04T18:20:56.530Z",
+            "modified": "2024-05-04T18:40:02.097Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjM2NjZlMzJmMGFmNmUyYmZlY2E3MzUiLCJpYXQiOjE3MTQ4NDYwODQsImV4cCI6MTcxNDg0OTY4NH0.fpisVubShmo4iUiCqwlVo6BIK9veFtXewPBGl4KF2fA"
+                }
+            ]
+        },
+        {
+            "_id": "92bc3539-f53e-4c81-9c4c-c1a2af187cb7",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "423efae5-078f-4185-be5e-e9a9c2a653c9",
+            "name": "Create Visita",
+            "url": "https://api-parcial-uejn.onrender.com/api/inmuebles/visita/create/REF4545",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-05-04T18:20:56.531Z",
+            "modified": "2024-05-04T18:40:12.830Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjI3NWEyYzg4ODg2NDkwY2EyMThmN2UiLCJpYXQiOjE3MTQ3ODQzODMsImV4cCI6MTcxNDc4Nzk4M30.FJxh5FXqZS7sJw1tgFD5qgzsAMqcPmGJcKK9318gWhU"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cliente\":\"66274bfce2ce2be76ce463a6\",\n  \"fecha\":\"2024-12-08\",\n  \"estado\":\"POR VISITAR\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "fa4c3238-de57-4d1e-8ec5-c90b64afef5c",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "9f1ef012-8754-4edd-ab0b-e7c6cddc8c27",
+            "name": "Create",
+            "url": "https://api-parcial-uejn.onrender.com/api/oficinas/create",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-05-04T18:20:56.532Z",
+            "modified": "2024-05-04T18:39:11.935Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Cañaveral oriente\",\n  \"direccion\": \"cañaveral la entra hacia arriba\",\n  \"telefono\": \"3214569874\",\n  \"correo\": \"cañaveral@gmail.com\",\n  \"zona\": \"la zona de los tomaderos por donde bajan los buses\",\n  \"estado\":\"ACTIVA\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3fce499c-a459-4416-aced-1cdcea35e345",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "9f1ef012-8754-4edd-ab0b-e7c6cddc8c27",
+            "name": "Update",
+            "url": "https://api-parcial-uejn.onrender.com/api/oficinas/662744052718615faf001bd6",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-05-04T18:20:56.533Z",
+            "modified": "2024-05-04T18:39:00.735Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Provenza sur este\",\n  \"direccion\": \"provenza calle 105 cr 35, la entrada\",\n  \"telefono\": \"3133882618\",\n  \"correo\": \"provenza2@gmail.com\",\n  \"zona\": \"Retorno izquierdo los arboles grandes\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "351f9223-f78a-4ba4-baaf-1d5c5504f6e2",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "9f1ef012-8754-4edd-ab0b-e7c6cddc8c27",
+            "name": "Delete",
+            "url": "https://api-parcial-uejn.onrender.com/api/oficinas/delete/662744fae75f11f8bff1d1c3",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-05-04T18:20:56.535Z",
+            "modified": "2024-05-04T18:39:15.165Z",
+            "headers": []
+        },
+        {
+            "_id": "c4876946-4034-4773-8a57-1b485ca9d9a3",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "9f1ef012-8754-4edd-ab0b-e7c6cddc8c27",
+            "name": "Get",
+            "url": "http://localhost:8080/api/oficinas/",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-05-04T18:20:56.536Z",
+            "modified": "2024-05-04T19:03:10.464Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjM2NjZlMzJmMGFmNmUyYmZlY2E3MzUiLCJpYXQiOjE3MTQ4NDYwODQsImV4cCI6MTcxNDg0OTY4NH0.fpisVubShmo4iUiCqwlVo6BIK9veFtXewPBGl4KF2fA"
+                }
+            ]
+        },
+        {
+            "_id": "9468d644-436f-4c70-ac62-fb740968534e",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "31a9ce95-8ba8-4f6a-a9e4-ab2db74bcd94",
+            "name": "get",
+            "url": "https://api-parcial-uejn.onrender.com/api/clientes/",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-05-04T18:20:56.537Z",
+            "modified": "2024-05-04T18:40:27.920Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjM2NjZlMzJmMGFmNmUyYmZlY2E3MzUiLCJpYXQiOjE3MTQ4NDUyMTIsImV4cCI6MTcxNDg0ODgxMn0._1vPTaOrmRmiyvKaN0n9jpxoL97v2mAtZWiVN2QhzIo"
+                }
+            ]
+        },
+        {
+            "_id": "06014ca8-920f-43f7-a002-f55681fe182e",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "31a9ce95-8ba8-4f6a-a9e4-ab2db74bcd94",
+            "name": "post",
+            "url": "https://api-parcial-uejn.onrender.com/api/clientes/create",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-05-04T18:20:56.538Z",
+            "modified": "2024-05-04T18:40:36.643Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Camilo Leon Fariñes\",\n  \"identificacion\":\"13245698\",\n  \"direccion\":\"Brisas de primavera 2 primara\",\n  \"telefono\":\"65477981\",\n  \"correo\":\"cleon@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "46c10e79-0be0-44f0-8436-64aa12ebe4cd",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "31a9ce95-8ba8-4f6a-a9e4-ab2db74bcd94",
+            "name": "update",
+            "url": "https://api-parcial-uejn.onrender.com/api/clientes/66274ba6323931b202e3962d",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-05-04T18:20:56.539Z",
+            "modified": "2024-05-04T18:40:57.825Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjM2NjZlMzJmMGFmNmUyYmZlY2E3MzUiLCJpYXQiOjE3MTQ4NDUyMTIsImV4cCI6MTcxNDg0ODgxMn0._1vPTaOrmRmiyvKaN0n9jpxoL97v2mAtZWiVN2QhzIo"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nombre\": \"Juan sin miedo\",\n    \"identificacion\": \"879645\",\n    \"direccion\": \"Avenida Vainilla con rosaura 232\",\n    \"telefono\": \"3214569874\",\n    \"correo\": \"juan@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "be6dd7cf-9555-4d28-923f-96b1bfe25a3f",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "f7a878c1-e0e3-4dec-b7a9-ee290439c40f",
+            "name": "login",
+            "url": "http://localhost:8080/api/login",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-05-04T18:20:56.540Z",
+            "modified": "2024-05-04T19:06:14.350Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\":\"jesus@gmail.com\",\n  \"password\":\"12345678\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "11716bec-ff80-46a2-8cab-a7cf8be39066",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "baaa0fb5-9301-436f-885e-46df20b7ac6f",
+            "name": "post",
+            "url": "http://localhost:8080/api/usuarios/create",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2024-05-04T18:20:56.541Z",
+            "modified": "2024-05-04T19:05:13.836Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjI3NWEyYzg4ODg2NDkwY2EyMThmN2UiLCJpYXQiOjE3MTQ4NDEyOTQsImV4cCI6MTcxNDg0NDg5NH0.SgLZpwJDt5tIoqSQY8EDkqS5Ex61R01K84u-koTQIhI"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Jesus Pradilla\",\n  \"identificacion\":\"978465\",\n  \"direccion\":\"La Bucara\",\n  \"telefono\":\"879645\",\n  \"correo\":\"jesus@gmail.com\",\n  \"password\":\"12345678\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "09f8a27e-8e71-4784-b6b8-edfcc8d8a073",
+            "colId": "96a8e41f-c2d5-425d-bcad-3477494f7f55",
+            "containerId": "baaa0fb5-9301-436f-885e-46df20b7ac6f",
+            "name": "get",
+            "url": "https://api-parcial-uejn.onrender.com/api/usuarios/",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-05-04T18:20:56.542Z",
+            "modified": "2024-05-04T18:41:25.654Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjM2NjZlMzJmMGFmNmUyYmZlY2E3MzUiLCJpYXQiOjE3MTQ4NDUyMTIsImV4cCI6MTcxNDg0ODgxMn0._1vPTaOrmRmiyvKaN0n9jpxoL97v2mAtZWiVN2QhzIo"
+                }
+            ]
+        }
+    ],
+    "ref": "-jj0BLr4XBPBmQwE29CtVsRtLVZUJnHqKe_hrxwCkYaE915RgvXPCJCQ5ZUYQa-9aVLXaYRpH25y4mlo8xaIXg"
+}
